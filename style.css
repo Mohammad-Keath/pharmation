@@ -7,6 +7,9 @@ header{
     width: 100%;
     background-color: #122D21;
 }
+header img{
+    height: 100px;
+}
 header nav{
     display: flex;
     flex-direction: row;
@@ -15,40 +18,113 @@ header nav{
     margin: 0px;
     color: white;    
 }
-header nav a {
+header nav a:hover{
+    background-color: #0D260B;
+}
+header nav a:{
+    background-color: #3E8239;
+}
+.dropdown .dropbtn:hover{
+    background-color: #0D260B;
+}
+header nav a{
     padding: 40px;
 text-decoration: none;
 color: white;
 }
 #About {
     background-color: #6CB99B;
-    color: black;
-
+    color: black;}
+#About:hover{
+    background-color: #3E8239;
+}
+.dropdown .dropbtn{
+    font-size: 25px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 40px;
+    
+    background-color: #122D21
 }
 
-img{
-    height: 100px;
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #6CB99B;
+    min-width: 250px;
+}
+.dropdown-content a{
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+border: 1px solid #122D21;
+}
+.dropdown-content a:hover {
+    background-color: #3E8239;
+  }
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+
+
+
+
+
+main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
 }
 main nav{
-    padding-top: 60px;
+    padding-top: 100px;
     display: flex;
     flex-direction: column;
     margin-top: 108px;
-    background-color: #122D21;
-    width: 220px;
+    background-color: white;
     position: fixed;
     height: 100%;
     left: 0;
+    border-right: 2px solid ;
 }
 main nav a{
-    font-size: 22px;
-    height: 70px;
+    font-size: 16px;
     margin: 5px;
-    padding-top: 40px;
-    width: 200px;
-    text-align:center;
-    border: 1px solid black;
+    padding: 4px;
+    font: bold;
+    text-align:left;
+    border: 1px ;
     text-decoration: none;
     color: black;
-    background-color: #6CB99B;
+    border: 1px solid;
 }
+main nav a:hover{
+    background-color: silver;
+}
+main div{
+    margin: 20px;
+}
+main img{
+    height: 250px;
+}
+.album{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    margin-left: 170px;
+
+}
+.album a {
+    padding: 30px;
+    margin-right: 60px;
+    margin-top: 60px;
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+    text-align: center;
+}
+
